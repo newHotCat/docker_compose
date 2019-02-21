@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  jenkins:
+    restart: always
+    image: jenkins/jenkins
+    ports:
+      - 18080:8080
+    volumes:
+      - /home/tong/demo/jenkins/jenkins_home:/var/jenkins_home
